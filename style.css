@@ -28,7 +28,7 @@ picture {
   display: block;
 }
 
-input, 
+input,
 button,
 textarea,
 select {
@@ -49,8 +49,17 @@ select {
 /* Base */
 div{}
 div h2{}
+div p{}
+div a{}
+div{}
+div h3{}
+div a{}
+div a{}
+div a{}
+div{}
 div h3{}
 div p{}
+
 /* Layout */
 
 /* Componentes */
