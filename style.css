@@ -1,10 +1,17 @@
-/* Reset */
+/* Imports & supports */
+@import url("https://rsms.me/inter/inter.css");
+@supports (font-variation-settings: normal) {
+  html {
+    font-family: "Inter var", sans-serif;
+  }
+}
+*/
+/* Reset & Base */
 *,
 *::before,
 *::after {
   box-sizing: border-box;
 }
-
 body,
 h1,
 h2,
@@ -16,25 +23,40 @@ figure,
 picture {
   margin: 0;
 }
-
 body {
   line-height: 1.5;
   min-height: 100vh;
 }
-
+ul {
+  margin: 0;
+  padding-inline: 0;
+}
+li {
+  list-style: none;
+}
+p {
+  font-size: 10px;
+  font-weight: 500;
+}
+h2 {
+  font-size: 10px;
+  font-weight: 700;
+}
+h1 {
+  font-size: 140px;
+  font-weight: 700;
+  /* text-indent: -50px; */
+  text-align: right;
+  line-height: 3cm;
+}
+a {
+  text-decoration: none;
+}
 img,
 picture {
   max-width: 100%;
   display: block;
 }
-
-input,
-button,
-textarea,
-select {
-  font: inherit;
-}
-
 @media (prefers-reduced-motion: reduce) {
   *,
   *::before,
@@ -42,26 +64,53 @@ select {
     animation-duration: 0.01ms !important;
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
-    scroll-behaviour: auto !important;
+    scroll-behavior: auto !important;
   }
 }
-
-/* Base */
-div{}
-div h2{}
-div p{}
-div a{}
-div{}
-div h3{}
-div a{}
-div a{}
-div a{}
-div{}
-div h3{}
-div p{}
-
-/* Layout */
+/* Variables */
+:root {
+  /* colores */
+  --clr-dark: 230 35% 7%;
+  --clr-light: 231 77% 90%;
+  --clr-white: 0 0% 100%;
+  /* tipografia */
+  --f-family: "Inter var", sans-serif;
+  --f-size: 16px;
+  --f-weight: 400;
+}
+/* Aplica estas variables a todos los elementos */
 
 /* Componentes */
-
 /* Utilidades */
+.flex {
+  display: flex;
+}
+.grid {
+  display: grid;
+}
+.contenedor {
+  margin-inline: auto;
+}
+
+.titulo {
+  width: 80vw;
+  margin-inline: auto;
+}
+.titulo span {
+  display: block;
+}
+
+.titulo span:nth-child(1) {
+  background-color: rgb(79, 212, 212);
+}
+.titulo span:nth-child(2) {
+  background-color: rgb(126, 79, 212);
+  text-align: left;
+}
+.titulo span:nth-child(3) {
+  background-color: rgb(212, 79, 179);
+}
+.titulo span:nth-child(4) {
+  background-color: rgb(212, 95, 79);
+  text-align: left;
+}
