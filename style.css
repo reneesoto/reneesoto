@@ -1,0 +1,124 @@
+/* Imports & supports */
+@import url("https://rsms.me/inter/inter.css");
+@supports (font-variation-settings: normal) {
+  html {
+    font-family: "Inter var", sans-serif;
+  }
+}
+*/
+/* Reset & Base */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+figure,
+picture {
+  margin: 0;
+}
+body {
+  line-height: 1.5;
+  min-height: 100vh;
+}
+ul {
+  margin: 0;
+  padding-inline: 0;
+}
+li {
+  list-style: none;
+}
+p {
+  font-size: 14px;
+  font-weight: 500;
+  padding: 20px;
+}
+h2 {
+  font-size: 14px;
+  font-weight: 1000;
+}
+h1 {
+  font-size: 150px;
+  font-weight: 700;
+  /* text-indent: -50px; */
+  text-align: right;
+  line-height: 120px;
+}
+a {
+  text-decoration: none;
+}
+
+div{
+  padding: 0px;
+  margin: 50px;
+  display: flex;
+}
+body{
+   background-image: url("./background.jpg");
+   max-width: 100%;
+
+}
+
+
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+/* Variables */
+:root {
+  font-family: 'Work Sans', sans-serif;
+  /* colores */
+  --clr-dark: 230 35% 7%;
+  --clr-light: 231 77% 90%;
+  --clr-white: 0 0% 100%;
+  /* tipografia */
+  --f-family: 'Work Sans', sans-serif;
+  --f-size: 16px;
+  --f-weight: 400;
+}
+/* Aplica estas variables a todos los elementos */
+
+/* Componentes */
+/* Utilidades */
+.flex {
+  display: static;
+}
+.grid {
+  display: grid;
+}
+.contenedor {
+  margin-inline: auto;
+}
+
+
+.titulo {
+  width: 70vw;
+  margin-inline: auto;
+}
+.titulo span {
+  display: block;
+}
+
+.titulo span:nth-child(1) {
+}
+.titulo span:nth-child(2) {
+  text-align: left;
+}
+.titulo span:nth-child(3) {
+}
+.titulo span:nth-child(4) {
+  text-align: left;
+}
